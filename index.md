@@ -1,5 +1,6 @@
 ---
 layout: default 
+title: step-SysAdmin's brain dump
 ---
 
 ## PC and server stuff
