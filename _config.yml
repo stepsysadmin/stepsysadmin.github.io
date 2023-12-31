@@ -1,0 +1,11 @@
+# Site settings
+title: "step-SysAdmin's Random Assortment of things"
+author:
+  name: step-SysAdmin
+  email: stepsys@mailbox.org
+description: "Random assortment of useful stuff and things I've picked up or learned over the years."
+
+# Build settings
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
