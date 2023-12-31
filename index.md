@@ -8,4 +8,4 @@ layout: default
 
 ### Useful guides and tips
 
-[Windows Server 2022 Audio issues](./ws2022-audio.html)
+[Windows Server 2022 Audio issues](./ws2022-audio.html) - Sound recording not working when running in a virtual environment (e.g. Proxmox)
