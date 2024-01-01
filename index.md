@@ -5,7 +5,7 @@ title: step-SysAdmin's brain dump
 
 ## PC and server stuff
 
-[Homeserver Setup](./homeserver.md)
+[Homeserver Setup](./homeserver.md)  
 [Samsung SSD Firmware Bugs and ZFS](./samsung-zfs-bug.html)
 
 ### Useful guides and tips
