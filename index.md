@@ -15,4 +15,5 @@ title: step-SysAdmin's brain dump
 
 ### Personal ramblings
 
+[2024 - the year of the Linux desktop!](./2024_linux_desktop.html)
 [Making contracts over the phone](./phone-contracts.html) - and why I think this is a bad idea.
