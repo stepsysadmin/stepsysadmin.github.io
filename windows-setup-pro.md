@@ -139,7 +139,7 @@ Additionally, there are a ton of useful and trusted resources for you to get Win
 * Chris Titus WinUtil if you prefer a graphical interface for tweaking: [WinUtil by Chris Titus](https://github.com/ChrisTitusTech/winutil)
 * O&O ShutUp10 for privacy tweaks: [O&O ShutUp10!](https://www.oo-software.com/shutup10)
 * Privacy.sexy for a large variety of privacy and security tweaks: [https://privacy.sexy](https://privacy.sexy)
-* Microsoft PowerToys for some powerful software: [Microsoft PowerToys | Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/)
+* Microsoft PowerToys for some powerful software: [Microsoft PowerToys \| Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/)
 
 Congrats! You've now made your Windows more private and have installed the software that you actually want to use.
 
