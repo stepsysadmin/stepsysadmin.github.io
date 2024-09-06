@@ -80,15 +80,6 @@ This should be it, you should now be presented with a Windows desktop after a co
 
 So you've installed a clean copy of Windows. Nice! But what now? There are some tweaks that I deem absolutely essential and won't want to miss anymore. 
 
-Namely:
-* Installing WinGet
-* Enabling verbose logon messages
-* Disable spell checking
-* Disable all kinds of telemetry and tracking
-* Disable Advertisement ID usage
-* Disable automatic sample uploads from Windows Defender
-and a ton more.
-
 And would you look at that? I compiled a script that actually does just that for you! You can fetch it here: [stepsysadmin/stepsys-deploy](https://github.com/stepsysadmin/stepsys-deploy)
 
 Additionally, it will install most of the software that I will cover later using WinGet. But first things first. Let's re-enable the Windows Store if you're on an Enterprise LTSC build.
@@ -131,7 +122,7 @@ It also sets some other settings and adds some registry tweaks, namely these:
 * Set "device usage mode" to "Gaming" (I actually don't know what this does, but it seems that it sets "game mode" to always on. I guess it can't hurt.)
 * Enable Win32 long paths
 * Show file extensions by default
-* Disable hardware accelerated GPU stuttering (fixes the bug where playing ETS2 on one screen and watching YouTube on another one would make the video stutter)
+* Disable hardware accelerated GPU scheduling (fixes the bug where playing ETS2 on one screen and watching YouTube on another one would make the video stutter)
 * Enable Swap effect upgrade cache (optimizes performance for windowed games)
 * Disable startup delay
 * Disable app launch tracking
