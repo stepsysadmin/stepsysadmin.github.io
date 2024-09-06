@@ -68,7 +68,7 @@ After choosing the correct partition, hit next and the install will commence. Af
 
 You will now enter a mode called **OOBE (Out Of Box Experience)** which you've probably seen before when setting up a machine for the first time. If you've installed via WDS or if you're setting up a machine with an OEM license on it (preinstalled Windows), it will now ask you to accept the license agreement.
 
-*Top tip: If you're setting up Windows 11 Home or Pro, now is the time to pull out your Ethernet cable if you have one, and physically disable WiFi on the machine, if applicable. Then, press Shift+F10 which will bring up a command prompt. Type "oobe /bypassnro" (without quotes) to set up the OS without connecting to a Microsoft account.*
+*Top tip: If you're setting up Windows 11 Home or Pro, now is the time to pull out your Ethernet cable if you have one, and physically disable WiFi on the machine, if applicable. Then, press Shift+F10 which will bring up a command prompt. Type "oobe\bypassnro" (without quotes) to set up the OS without connecting to a Microsoft account.*
 
 After this, you will be asked for your keyboard layout and locale once again - choose the options that apply to you. After setting up networking (and maybe rebooting again, on some machines) you will be asked for Microsoft account credentials. **You want to click on "Domain join instead"** in the lower left hand corner. You don't actually need to join a domain, just click it and type in your desired user name. If Windows tries to guilt trip you with some "great features" you're "missing out on", just ignore that and click continue without Microsoft account or whatever it's called now.
 
@@ -89,7 +89,7 @@ Namely:
 * Disable automatic sample uploads from Windows Defender
 and a ton more.
 
-And would you look at that? I compiled a script that actually does just that for you! You can fetch it here: https://github.com/stepsysadmin/stepsys-deploy
+And would you look at that? I compiled a script that actually does just that for you! You can fetch it here: [stepsysadmin/stepsys-deploy](https://github.com/stepsysadmin/stepsys-deploy)
 
 Additionally, it will install most of the software that I will cover later using WinGet. But first things first. Let's re-enable the Windows Store if you're on an Enterprise LTSC build.
 
@@ -101,14 +101,57 @@ What this does is call the Windows Store reset script (wsreset) and pass the "-i
 
 *Top tip: If you want to run the script I linked, you will need to issue the command ``Set-ExecutionPolicy Unrestricted -Force``, otherwise, PowerShell will refuse to run a script downloaded from the internet. Read the instructions carefully whenever running scripts from an unknown source.*
 
+The script leverages WinGet with the Microsoft store to install some commonly used software. Currently, this includes:
+
+* 7-Zip
+* Audacity
+* Bulk Crap Uninstaller
+* CPU-Z
+* Discord
+* Voidtools Everything
+* ffmpeg
+* OneDrive (not installed by default if IoT Enterprise LTSC)
+* VSCode
+* NAPS2 (Scanning software)
+* GPU-Z
+* Windows Terminal
+* VLC media player
+* WizTree
+* Firefox
+* Thunderbird
+* nomacs (Image viewer)
+* yt-dlp (Commandline)
+
+Please remember that this is my configuration, so it makes sense that the script configures Windows and installs the software how *I* like it. You may have different preferences, so feel free to fork/modify the script to your liking!
+
+It also sets some other settings and adds some registry tweaks, namely these:
+
+* Enable verbose logon messages
+* Disable spell check and auto correct
+* Set "device usage mode" to "Gaming" (I actually don't know what this does, but it seems that it sets "game mode" to always on. I guess it can't hurt.)
+* Enable Win32 long paths
+* Show file extensions by default
+* Disable hardware accelerated GPU stuttering (fixes the bug where playing ETS2 on one screen and watching YouTube on another one would make the video stutter)
+* Enable Swap effect upgrade cache (optimizes performance for windowed games)
+* Disable startup delay
+* Disable app launch tracking
+* Disable file history
+* Disable find my device
+* Disable shared experiences
+* Disable ads, reset advertising ID, disable suggestions and disable Windows timeline
+* Disable potentially unwanted application reporting within Defender
+* Disable automatic sample submission within Defender
+
+You might need to run [asheroto/winget-install](https://github.com/asheroto/winget-install) to actually be able to use WinGet before running the script.
+
 Additionally, there are a ton of useful and trusted resources for you to get Windows set up in a more privacy respecting and user friendly way. The instructions can be found on the respective website. Here are a few:
-* Chris Titus WinUtil if you prefer a graphical interface for tweaking: https://github.com/ChrisTitusTech/winutil
-* O&O ShutUp10 for privacy tweaks: https://www.oo-software.com/shutup10
-* Privacy.sexy for a large variety of privacy and security tweaks: https://privacy.sexy
-* Microsoft PowerToys for some powerful software: https://learn.microsoft.com/en-us/windows/powertoys/
+* Chris Titus WinUtil if you prefer a graphical interface for tweaking: [WinUtil by Chris Titus](https://github.com/ChrisTitusTech/winutil)
+* O&O ShutUp10 for privacy tweaks: [O&O ShutUp10!](https://www.oo-software.com/shutup10)
+* Privacy.sexy for a large variety of privacy and security tweaks: [https://privacy.sexy](https://privacy.sexy)
+* Microsoft PowerToys for some powerful software: [Microsoft PowerToys | Microsoft Learn](https://learn.microsoft.com/en-us/windows/powertoys/)
 
 Congrats! You've now made your Windows more private and have installed the software that you actually want to use.
 
 *I plan on expanding this article with more info in the future, but due to time constraints have published it now already.*
 
-Last update: Sun, Jul 7, 2024
+Last update: Fri, Sep 6, 2024
