@@ -5,7 +5,7 @@ title: step-SysAdmin's brain dump
 
 ## PC and server stuff
 
-[Setting up Windows like a pro](./windows-setup-pro.html) - The last Windows setup guide you'll ever need!
+[Setting up Windows like a pro](./windows-setup-pro.html) - The last Windows setup guide you'll ever need!  
 [Homeserver Setup](./homeserver.md)  
 [Samsung SSD Firmware Bugs and ZFS](./samsung-zfs-bug.html)
 
