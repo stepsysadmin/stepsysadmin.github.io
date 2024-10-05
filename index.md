@@ -5,7 +5,8 @@ title: step-SysAdmin's brain dump
 
 ## PC and server stuff
 
-[Thw browser you use sucks!](./browsers-suck.html)  
+[Recovering Windows systems](./recovering-windows.html)  
+[The browser you use sucks!](./browsers-suck.html)  
 [Setting up Windows like a pro](./windows-setup-pro.html) - The last Windows setup guide you'll ever need!  
 [Homeserver Setup](./homeserver.md)  
 [Samsung SSD Firmware Bugs and ZFS](./samsung-zfs-bug.html)
