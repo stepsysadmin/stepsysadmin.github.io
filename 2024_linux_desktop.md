@@ -63,3 +63,9 @@ Since I'm actually experiencing some positive effects from not gaming, I'll prob
 It's been exactly 1 month since I switched and I could see my productivity increase - Linux works well and I love the package management which Windows lacks.
 
 We'll see where we end up.
+
+### Update: October 2024
+
+Well, this post kind of aged like milk. I'll keep it short: I switched back to Windows because the lack of Microsoft and Adobe software was becoming a problem for my academic work, and because I didn't like the clunkiness of the desktop.
+
+I tried again around a week ago with Ubuntu, but some obscure software that I needed for my academic work, which is Windows and Mac only (and the Mac version crashing halfway through the computation) was the straw that broke the camel's back. So I'm back on Windows.
